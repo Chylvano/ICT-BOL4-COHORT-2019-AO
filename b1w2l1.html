@@ -1,26 +1,58 @@
-Chylvano Landburg
-Media en Applicatie-ontwikkelaar
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-   <title>lab 1 - basis</title>
-</head>
+<html>
+   <head>
+      <title>
+         PizzaCalculator
+      </title>
+   </head>
 <body>
-  <h1>Lab 1 - basis</h1>
-  <script src="b1w2l1.js"></script>
+      <p>Welke grootte pizza wilt u:</p>
 
-  <script type="text/javascript">
+      Small 5$: <input type="checkbox" id="myCheck"  onclick="myFunction()">
+       
+      <script>
+      function myFunction() {
+        var checkBox = document.getElementById("myCheck");
+        var text = document.getElementById("text");
+        if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+           text.style.display = "none";
+        }
+      }
+      </script>
 
-  alert('Beste gebruiker u dient eerst 3 vragen te beantwoorden');
+Medium 7,50$: <input type="checkbox" id="myCheck"  onclick="myFunction()">
 
-  prompt('Wat is je voornaam?');
-  prompt('Wat is je achternaam?');
-  prompt('Wat is je leeftijd?');
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text2");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
 
+Large 10$: <input type="checkbox" id="myCheck"  onclick="myFunction()">
 
-
-  </script>
-
- </body>
-</html>
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text3");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+</script>
+<style>
+body
+{
+    background-color: black; 
+    color: white;
+</style>
