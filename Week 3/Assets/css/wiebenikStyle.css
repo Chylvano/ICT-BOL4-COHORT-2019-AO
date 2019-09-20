@@ -33,7 +33,8 @@ li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
-img {
+
+#img1 {
   position: absolute;
   left: 1410px;
   top: 2px;
