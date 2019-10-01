@@ -1,21 +1,3 @@
-<html>
-<head>
-<style>
-body {
-  background-color: coral;
-}
-</style>
-</head>
-<body>
-
-
-
-</body>
-</html>
-
-php
-round($getal, 1);
-
 var smallPizza = prompt ("Hoeveel small pizza's wilt u?","Aantal"); //vraagt aantal small pizza's
 var smallPrijs = 5.99; //variable instellen voor smallprijs
 document.write("Totaal small pizza's: $", smallPizza*smallPrijs,"<br/>"); //rekent prijs totaal small pizza's uit
@@ -35,5 +17,3 @@ var totaalLarge = largePizza*largePrijs
 
 document.write("Eindtotaal: $",totaalSmall+totaalMedium+totaalLarge); 
 //totaal prijs word uitgerekend
-
-
