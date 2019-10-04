@@ -1,0 +1,61 @@
+img {
+    position: absolute;
+    left: 0%;
+    top: -10%;
+    z-index: -1;
+  }
+
+  html, body{overflow:hidden;} 
+
+  div {
+    position: absolute;
+    left: 39%;
+    top: 26.5%;
+  }
+
+  #pages2 {
+    position: absolute;
+    left: 43%;
+    top: 53%;
+    opacity: 0.4;
+  }
+
+  #huisje {
+    position: absolute;
+    left: 25%;
+    top: 53%;
+    opacity: 0.4;
+  }
+
+  #settings {
+    position: absolute;
+    left: 35%;
+    top: 53%;
+    opacity: 0.4;
+  }
+
+  #lettera {
+    position: absolute;
+    left: 60%;
+    top: 53%;
+    opacity: 0.4;
+  }
+
+  #popp {
+    position: absolute;
+    left: 68%;
+    top: 53%;
+    opacity: 0.4;
+  }
+
+  #boxes {
+    position: absolute;
+    left: 52%;
+    top: 53%;
+    opacity: 0.4;
+  }
+
+
+  
+  
+ 
