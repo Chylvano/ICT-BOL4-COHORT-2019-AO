@@ -1,40 +1,42 @@
-var frisprijs = 2.00;
-var bierprijs = 1.50;
-var wijnprijs = 4.00;
-var bitterballenprijs12 = 5.00;
-var bitterballenprijs24 = 7.50;
+const frisprijs = 2.00;
+const bierprijs = 1.50;
+const wijnprijs = 4.00;
+const bitterballenprijs = 0.20;
+var totaalFris = 0
+var totaalBier = 0
+var totaalWijn = 0
 
-function menu(){
-    var menu = prompt("Welke bestelling wilt u toevoegen? Kies 1 voor drinken en 2 voor snacks.")
-    if (menu == 1){
-        var hvlDrank = toevoegen();
+alert ("Welkom bij folenka")
+
+alert("Type stop om naar de volgende bestelling te gaan.")
+
+function keuze(){
+    while(keuze = true){
+    var keuze = prompt("Type 1 om uw bestelling te starten met dranken of type 2 om uw bestelling te starten met bitterballen");
+        if(keuze == 1){
+        drank = parseInt(prompt("Hoeveel aantal frisdranken wilt u bestellen?"))
+        totaalFris = totaalFris+drank;
+
+        drank2 = parseInt(prompt("Hoeveel bier wilt u bestellen?"))
+        totaalBier = totaalBier+drank2;
+
+        drank3 = parseInt(prompt("Hoeveel wijn wilt u bestellen?"))
+        totaalWijn = totaalWijn+drank3;
+
+        }
+        else if(keuze == 2){
+           var bitterballen = prompt("Hoeveel bitterballen wilt u bestellen.");
+
+        }
+        else if( keuze = "STOP"){
+           keuze = false
+            document.write("Aantal frisdrank: " + totaalFris +"<br>"+ "Prijs frisdrank:  $" + frisprijs*totaalFris + "<br>"+ "<br>");
+            document.write("Aantal bier: " + totaalBier + "<br>"+ "Prijs bier:  $" + bierprijs*totaalBier + "<br>" + "<br>");
+            document.write("Aantal wijn: " + totaalWijn + "<br>"+"Prijs wijn:  $" + wijnprijs*totaalWijn  +"<br>" +"<br>");
+            document.write("Aantal bitterballen: " + bitterballen + "<br>"+"Prijs bitterballen:  $" + bitterballenprijs*bitterballen  +"<br>"+"<br>");
+            return;
+        }
     }
-    else if(menu == 2){
-        drankmenu = snackmenu();
-    }  
 }
 
-function toevoegen(){
-    var drank = prompt("Welke bestelling wilt u toevoegen? Kies 1 voor bier, 2 voor fris, 3 voor wijn of 'stop' om de bestelling te annuleren")
-    if (drank == 1){
-        var hvlDrank = prompt("Hoeveel bier wilt u toevoegen aan uw bestellingen?")
-    }
-    else if(drank == 2){
-        hvlDrank = prompt("Hoeveel fris wilt u toevoegen aan uw bestelling?");
-    }  
-    else if(drank == 3){
-        hvlDrank = prompt("Hoeveel wijn wilt u toevoegen aan uw bestelling?") 
-    }
-}
-
-function snackmenu(){
-    var bitterballen = prompt("Hoeveel bitterballen wilt u bestellen typ 1 voor 12 stuks of 2 voor 24 stuks of 'stop' om de bestelling te annuleren")
-    if (bitterballen == 1){
-        var hvlbitterballen = alert("12 bitterballen zijn toegevoegd aan uw bestelling.")
-    }
-    else if(bitterballen == 2){
-        hvlbitterballen = alert("24 bitterballen zijn toegevoegd aan uw bestelling.") 
-    }
-}
-
-menu();
+keuze();
