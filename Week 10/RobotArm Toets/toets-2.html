@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="./robot-arm.js"></script>
+        <script>
+            // Robotarm bibliotheek inladen
+            var canvas = document.getElementById("canvas");
+            var robotArm = new RobotArm(canvas);
+            
+            // Het level inladen
+            robotArm.loadLevel("exam 2");
+            robotArm.speed = 600;
+            
+            // Deze code pas je NIET aan
+              
+            moveArm("right", 3);
+            moveBlock("left", 3);
+            moveBlock("right", 6);
+            moveBlock("right", 2);
+            moveBlock("right", 6);
+            moveBlock("left", 1);
+            moveBlock("left", 3);
+
+
+            /*
+
+                Je mist twee functies, de moveArm en moveBlock. Dit is de reden dat de robotArm niet opstart en je 
+                een wit scherm krijgt. Deze functies bevatten beide twee parameters. Jij gaat die functies bouwen. 
+                Handig om te weten is dat de functie moveArm ook wordt aangeroepen in de moveBlock functie. De moveBlock 
+                functie pakt een blokje, verplaatst hem naar een bepaalde plaats en verplaatst de arm weer terug naar 
+                boven de stapel. Je mag maximaal 25 regels code toevoegen.
+
+            */
+
+
+
+            // Jou instructies voor het werkend maken van de code volgen hier
+            moveBlock();{
+                if (local.state.blocks.held == null) {
+            local.animationList.push(local.grabAnimation);
+            if (local.state.blocks.map[local.state.arm.position] && local.state.blocks.map[local.state.arm.position].length > 0) {
+                local.state.blocks.held = local.state.blocks.map[local.state.arm.position][local.state.blocks.map[local.state.arm.position].length - 1];
+                var row = local.state.blocks.map[local.state.arm.position];
+                var blocksInRow = row.length;
+                row.splice(blocksInRow - 1, 1);
+            }
+        }
+    };
+            moveArm();{
+                if (local.state.arm.position - 1 < 0) return;
+        local.animationList.push(local.moveLeftAnimation);
+        local.state.arm.position--;
+            };
+
+            // De door jou opgegeven instructies uitvoeren
+            robotArm.run();
+        </script>
+    </body>
+</html>
