@@ -3,6 +3,8 @@ html { overflow-y: hidden; }
 
 
 body {
+  font: "verdana";
+  color: black;
   margin: 0  ;
 }
 
@@ -41,21 +43,28 @@ li a:hover:not(.active) {
   z-index: -1;
 }
 
-
-
 img {
   position: absolute;
-  left: 1410x;
+  left: 1410px;
   top: 2px;
   z-index: -1;
 }
 
-
-\  img {
+#img2 {
   position: absolute;
-  left: 1410x;
-  top: 2px;
+  left: 450px;
+  top: 400px;
   z-index: -1;
 }
 
+p{
+  font-size: 18px;
+}
 
+h2{
+  font-size: 28px;
+}
+
+h3{
+  font-size: 22px;
+}

@@ -5,10 +5,11 @@ document.getElementById("description").innerHTML = "Klik op start om te beginnen
 document.getElementById("button2").style.display = "none";
 document.getElementById("button3").style.display = "none";
 document.getElementById("inventoryItem").style.display = "none";
-document.body.style.backgroundImage = "url('img/start.jpg')";
+
+img.src= "img/start.jpg"
 function startspel(){
     document.getElementById("title").innerHTML = "Level 1";
-    document.getElementById("description").innerHTML = "Je bent in de woestijn wat ga je doen?<br> 1 - zoeken naar water<br> 2 - zoeken naar een stad<br> 3 - zoeken naar mensen";
+    document.getElementById("description").innerHTML = "Je bent in de woestijn wakker geworden zonder spullen wat ga je zoeken?<br> 1 - zoeken naar water<br> 2 - zoeken naar een stad<br> 3 - zoeken naar mensen";
     document.getElementById("button2").style.display = "inline-block";
     document.getElementById("button3").style.display = "inline-block";
     document.getElementById("button1").onclick = function() {level2a()};
@@ -40,7 +41,7 @@ function level2b(){
 
 function level2c(){
     document.body.style.backgroundImage = "url('img/einde1.jpg')";
-    document.getElementById("title").innerHTML = "Level 2";
+    document.getElementById("title").innerHTML = "Helaas";
     document.getElementById("button1").onclick = function() {startspel()};
     document.getElementById("description").innerHTML = "Je hebt niemand kunnen vinden en bent dood gegaan omdat je geen water had.";
     document.getElementById("button1").innerHTML = "Opnieuw beginnen";
@@ -50,5 +51,10 @@ function level2c(){
 }
 
 function level2b3e(){
-    document.body.style.backgroundImage = "url('img/stadvliegveld.gif')";
+    document.getElementById("title").innerHTML = "Level 3";
+    document.getElementsByClassName("myImg")[0].src = "img/stadvliegveld.gif";
+}
+
+function level2a3d(){
+    document.getElementsByClassName("myImg")[0].src = "img/winkel.jpg!d";
 }
