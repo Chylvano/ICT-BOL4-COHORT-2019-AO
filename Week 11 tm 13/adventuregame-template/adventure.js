@@ -136,7 +136,7 @@ function geengeld(){
 }
 
 function level5b(){
-    if (inventoryItem == 1
+    if (inventoryItem == true
         ){
      ticket1();
     }
