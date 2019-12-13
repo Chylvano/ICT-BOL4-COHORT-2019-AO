@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
    <title>Lingo</title>
    <link rel="stylesheet" type="text/css" href="lingo.css">
 </head>
 <body>
-   <div id='msgBox'>LINGO</div>
+   <div id='msgbox'>LINGO</div>
    <div id="smallMsg">Groen = goede letter, Geel = goede letter maar op de verkeerde plek</div>
    <div id="container">
      <div id="row1">
@@ -45,8 +46,8 @@
        <div class="square default"></div>
      </div>
    </div>
-   <input id="guess" onkeypress="submitguess(this)" placeholder='Type your guess!'>
-   <button id="button" class="invisible" onClick="playagain()">Play Again?</button>
-  <script src="lingo.js"></script>
+   <input id="guess" placeholder='Typ hier!'>
+   <button id="button" class="invisible" onClick="check()">opnieuw spelen?</button>
+  <script src="lingo-nl.js"></script>
  </body>
 </html>
