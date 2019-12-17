@@ -479,9 +479,7 @@ var words = [
 	"zever",
 	"zeeen"];
 
-	function newgame(){
-
-	}
+	var textbox = woord;
 
 	function check(){
 		var textbox = document.getElementById('woord');
@@ -497,5 +495,7 @@ var words = [
 			}
 		}
 	}
+
+	check();
 	
 	
