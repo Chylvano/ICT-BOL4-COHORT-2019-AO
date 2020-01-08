@@ -479,23 +479,57 @@ var words = [
 	"zever",
 	"zeeen"];
 
-	var textbox = woord;
+	
 
-	function check(){
-		var textbox = document.getElementById('woord');
-		var woord = textbox.value;
-		var woordArray = woord.split('');
-		var letter = document.getElementById('letter').value;
 	
-		for(i=0; i< woordArray.length; i++){
-			if(woordArray[i] == letter){
-				var kop = document.createElement('h1');
-				kop.innerText = 'letter' + letter + ' gevonden op plek ' + i;
-				document.body.appendChild(kop);
-			}
-		}
-	}
+var woord = words[Math.floor(Math.random() * words.length)];
+var woord2      = [];
 
-	check();
-	
-	
+
+
+
+var currentRow = 1;
+
+setFirstLetterOnBord();
+
+check();
+
+function setFirstLetterOnBord(){
+for (var i = 0; i < woord.length; i++) {
+woord[i]
+document.getElementById("r"+currentRow+"c" + i).innerHTML = woord[i].toUpperCase();
+}
+currentRow++;
+}
+
+function check(){
+
+var textbox = document.getElementById('woord');
+woord2.push(textbox.value);
+var woordarray = woord.split('');
+
+   
+
+   
+
+
+ console.log(woord);
+
+
+//vergelijk elke letter in de woordarray met elke letter van de gegenereerde array
+//geef feedback op het scherm (geel groen of rood) -> aparte functie?
+//geef de letter in de boxjes weer (kijk hiervoor naar de code van setFirstletteronbord)
+//voor de volgende check moet de rij opgehoogd worden (hoog currentrow op)
+
+
+if(true){
+
+
+
+}
+
+
+
+}
+
+console.log(woord);
