@@ -1,5 +1,5 @@
 var vakjes;
-
+var attempts = 0
 const row1 = document.getElementById("row1");
 
 for(vakjes = 0; vakjes < 25; vakjes++){
@@ -17,58 +17,42 @@ for(vakjes = 0; vakjes < 25; vakjes++){
     newDiv.style.background = "white";
 }
 
-
-
 var woord = words[Math.floor(Math.random() * words.length)];
-
-
 
 var currentRow = 1;
 
-setFirstLetterOnBord();
 
 
-function setFirstLetterOnBord(){
-for (var i = 0; i < woord.length; i++) {
-woord[4]
-document.getElementById('vakje0').value = woord[i].toUpperCase();
+console.log(woord)
+
+
+var textArray = woord.split("");
+document.getElementById("vakje0").value = textArray[0];
+console.log(textArray) 
+
+if(guess.length == 5){
+   alert ("het woord moet 5 letters zijn")
 }
-currentRow++;
-}
-
-console.log(woord);
-
-if(woord.length < 5){
-    alert ("het woord moet 5 letters zijn")
-}
-
-
-
-
-
-
-
-
-
-
-
 
 function checkword(){
-    raadword = document.getElementById("raadword");
-    checkwoord = document.getElementById("checkwoord");
-        console.log(raadword);
-        console.log(checkwoord);
-        for (i = 0; i < random.length; i++) {
-            if(checkWoord[i] == random[i]) {
-                document.getElementById("vakje_" + (i+1)).innerHTML = random[i];
-                document.getElementById("vakje_" + (i+1)).style.backgroundColor = "green";
-                raadWoord[i] = "*";
-            } else if (raadWoord.indexOf(checkWoord[i])>-1) {
-                document.getElementById("vakje_" + (i+1)).innerHTML = checkWoord[i];
-                document.getElementById("vakje_" + (i+1)).style.backgroundColor = "yellow";
+    var guess = document.getElementById("guess");
+    var guess = guess.value.split('');
+        for (i = 0; i < woord.length; i++) {
+            if(woord[i] == guess[i]) {
+                document.getElementById("vakje" + i).value = guess[i];
+                document.getElementById("vakje" + i).style.backgroundColor = "green";
+                guess[i] = "*";
+            } else if (woord.indexOf(guess[i])>-1) {
+                document.getElementById("vakje" + i).value = guess[i];
+                document.getElementById("vakje" + i).style.backgroundColor = "yellow";
             } else {
-                document.getElementById("vakje_" + (i+1)).innerHTML = checkWoord[i];
-                document.getElementById("vakje_" + (i+1)).style.backgroundColor = "red";
+                document.getElementById("vakje" + i).value = guess[i];
+                document.getElementById("vakje" + i).style.backgroundColor = "red";
+            }
+            if (attempts == 4) {
+                alert("Helaas je hebt het word niet geraden.")
             }
         }
-    }
+    }                     
+
+ 

@@ -1,0 +1,19 @@
+function checkword(){
+    raadword = document.getElementById("raadword");
+    checkwoord = document.getElementById("checkwoord");
+        console.log(raadword);
+        console.log(checkwoord);
+        for (i = 0; i < woord.length; i++) {
+            if(checkwoord[i] == random[i]) {
+                document.getElementById("vakje_" + (i+1)).innerHTML = random[i];
+                document.getElementById("vakje_" + (i+1)).style.backgroundColor = "green";
+                raadWoord[i] = "*";
+            } else if (raadWoord.indexOf(checkwoord[i])>-1) {
+                document.getElementById("vakje_" + (i+1)).innerHTML = checkwoord[i];
+                document.getElementById("vakje_" + (i+1)).style.backgroundColor = "yellow";
+            } else {
+                document.getElementById("vakje_" + (i+1)).innerHTML = checkwoord[i];
+                document.getElementById("vakje_" + (i+1)).style.backgroundColor = "red";
+            }
+        }
+    }
