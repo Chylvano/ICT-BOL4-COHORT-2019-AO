@@ -1,45 +1,23 @@
-html{
-    overflow-x: hidden;
+.container{
+  max-width: 100%;
+  margin: auto;
+  background-color: white;
 }
 
 .grid-container{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20px 45px 180px 250px 260px 50px
-  }
-
-
-body{
- max-width: 500em;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 8rem 5rem 4rem 5rem 5rem
 }
 
+body {
+  background-color: white;
+}
 
-.topnav {
-    background-color: rgb(229, 240, 76);
-    overflow: hidden;
-  }
-  
-  .topnav a {
-    float: left;
-    text-align: center;
-    padding: 5em 20em;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav{
-    position: relative;
-    bottom: 450px;
-    left: 920px;
-    padding: 0px;
-    opacity: 0.5;
-  }
-
-  .navbar{
-    margin-left: 100px;
-    margin-top: 20px;
-    grid-column-start: 2.5;
-    grid-column-end: 3;
-    grid-row-start: 0;
-    grid-row-end: 1;
-  }
+.logo{
+  background-color: rgb(243, 243, 47);
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
