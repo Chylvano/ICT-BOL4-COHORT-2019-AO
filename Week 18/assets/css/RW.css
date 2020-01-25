@@ -1,16 +1,78 @@
 .container{
   max-width: 100%;
-  margin: auto;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .grid-container{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 8rem 8rem 
+  grid-template-rows: 8rem;
 }
 
 body {
   background-color: white;
+  margin: 0;
+  font-family: 'Archivo', sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(114, 111, 111);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .banner{
@@ -19,6 +81,7 @@ body {
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 2;
+  margin-top: -20em;
 }
 
 .knop2{
@@ -42,33 +105,102 @@ body {
 }
 
 .knop3{
-  margin-left: 5em;
-  margin-top: 2em;
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.banner1{
-  margin-bottom: 10rem;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  width: 50%;
-  height: auto;
-}
-
-@media (min-width: 1267px) { 
-  .banner1 {
+  margin-left: 10em;
+  margin-top: 0em;
   width: 100%;
   height: auto;
 }
-}
+
 
 .grid-container2{
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 8rem 8rem 
+}
+
+.nav1{
+  width: 100%;
+  height: auto;
+}
+
+
+.bannerv1{
+   display: none;
+}
+
+@media (max-width: 1297px){
+   .banner1{
+     display: none;
+   }
+
+   
+   
+   
+   .bannerv1{
+     display: block;
+   }
+}
+
+.banner{
+  display: none;
+}
+
+@media (max-width: 1297px){
+  .nav1{
+    display: none;
+  }
+
+  
+  
+  
+  .banner{
+    display: block;
+  }
+}
+
+.knop1{
+  display: none;
+}
+
+@media (max-width: 1297px){
+  .knop1{
+    display: none;
+  }
+
+  
+  
+  
+  .knop1{
+    display: block;
+  }
+}
+
+.knop2{
+  display: none;
+}
+
+@media (max-width: 1297px){
+  .knop2{
+    display: none;
+  }
+
+  
+  
+  
+  .knop2{
+    display: block;
+  }
+}
+
+.navbar{
+margin-left: -8em;
+margin-top: 2.7em;
+grid-column-start: 3;
+grid-column-end: 6;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.dropbtn{
+  display: hide;
 }
