@@ -1,0 +1,258 @@
+.container{
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    overflow-x: hidden;
+  }
+  
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 156px 45px 45px 45px 180px 180px 45px 120px 120px 120px 45px 45px;
+  }
+
+  body {
+    background-color: grey;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .header{
+    grid-column-start: 0;
+    grid-column-end: 0;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+.p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.h3{
+    font-size: 24px;
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #36b2d8;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  li {
+    float: left;
+    margin-left: 75px;
+  }
+  
+  li a {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: white;
+  }
+
+  .active {
+    background-color: #d3721d;
+  }
+
+  .foto1{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .foto2{
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .foto3{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+  .foto4{
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+
+  .foto11{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .foto12{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .foto13{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  
+  .foto14{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 9;
+  }
+
+  .foto15{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 9;
+  }
+
+  .foto16{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 9;
+  }
+
+  .foto21{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .foto22{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .foto23{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  
+  .foto24{
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .footer{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    background-color: #36b2d8;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .footer2{
+    margin-top: 250px;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: #36b2d8;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+
+.titel1{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    background-color: #36b2d8;
+}
+
+.titel2{
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    background-color: #d3721d;
+}
+
+  .empty{
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 12;
+    grid-row-end: 13;
+    background-color: grey;
+  }
+
+  .empty2{
+    margin-top: 75px;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 13;
+    background-color: grey;
+  }
+
+  .empty3{
+    margin-top: 203px;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 13;
+    background-color: #36b2d8;
+  }
+
+  #stelling {
+    margin-top: 250px;
+    margin-left: 130px;
+    position: absolute;
+    width: 700px;
+    height: 30px;
+  }
+
+  #btnEens {
+    margin-top: 350px;
+    margin-left: 335px;
+    position: absolute;
+  }
+
+  #btnOneens {
+    margin-top: 350px;
+    margin-left: 390px;
+    position: absolute;
+  }
+
+  #btnVolgende {
+    margin-top: 375px;
+    margin-left: 355px;
+    position: absolute;
+  }
